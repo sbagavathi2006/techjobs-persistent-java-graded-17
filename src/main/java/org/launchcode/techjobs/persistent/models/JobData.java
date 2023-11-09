@@ -34,14 +34,11 @@ public class JobData {
             return results;
         }
         for (Job job : allJobs) {
-
-            String aValue = getFieldValue(job, column);
-
-            if (aValue != null && aValue.toLowerCase().contains(value.toLowerCase())) {
-                results.add(job);
-            }
+                String aValue = getFieldValue(job, column);
+                if (aValue != null && aValue.toLowerCase().contains(value.toLowerCase())) {
+                    results.add(job);
+                }
         }
-
         return results;
     }
 
@@ -84,7 +81,6 @@ public class JobData {
 
         return results;
     }
-
 
 }
 
